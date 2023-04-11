@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f8f8f8;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1000px 1fr;
@@ -104,7 +108,9 @@
 
 .imagem-fundo {
   grid-column: 1/4;
-
+  position: relative;
+  width: 100%;
+  height: 650px;
 }
 
 .imagem {
@@ -112,12 +118,361 @@
   height: 650px;
   background-image: url(img/principal.png);
   background-repeat: no-repeat;
-
 }
+
 
 .centro {
   width: 500px;
-  height: 200px;
-  border: 1px solid black;
-  top: 200px;
+  height: 250px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, .10)
+}
+
+.centro p,
+h1 {
+  text-align: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.centro p {
+  font-size: 15px;
+  color: #a5c926;
+  margin-top: 40px;
+}
+
+.centro h1 {
+  font-size: 35px;
+}
+
+.centro button {
+  background-color: #a5c926;
+  color: white;
+  border: none;
+  width: 125px;
+  height: 40px;
+  border-radius: 30px;
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.centro button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, .10);
+
+}
+
+.animal-toys {
+  grid-column: 1/4;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+@media screen and (max-width: 1120px) {
+  .animal-toys {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .animals {
+    margin-top: 40px;
+    margin-left: 15px;
+  }
+
+  .toys {
+    margin-bottom: 40px;
+    margin-right: 15px;
+  }
+
+  .animals button {
+    right: 50px;
+  }
+
+  .toys h2 {}
+
+}
+
+
+
+.animal-toys button {
+  border: none;
+  background-color: white;
+  width: 100px;
+  height: 35px;
+  border-radius: 30px;
+}
+
+.animals h2 {
+  position: absolute;
+  top: 30px;
+  left: 180px;
+}
+
+.animals button {
+  position: absolute;
+  bottom: 40px;
+  right: 150px;
+  cursor: pointer;
+}
+
+.toys button {
+  position: absolute;
+  bottom: 40px;
+  left: 150px;
+  cursor: pointer;
+}
+
+.toys h2 {
+  position: absolute;
+  top: 30px;
+  right: 190px;
+}
+
+.animals {
+  background-color: #ffc12c;
+  width: 30%;
+  height: 150px;
+  border-radius: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.toys {
+  background-color: #fb416b;
+  width: 30%;
+  height: 150px;
+  border-radius: 15px;
+  position: relative;
+  margin-left: 15px;
+}
+
+.animals img {
+  width: 40%;
+  position: absolute;
+  bottom: 10px;
+  left: -23px;
+}
+
+.toys img {
+  width: 40%;
+  position: absolute;
+  bottom: 10px;
+  right: -23px;
+}
+
+.stuffed-animals {
+  grid-column: 2/3;
+  height: 470px;
+}
+
+.stuffed-animals h1 {
+  float: left;
+}
+
+.stuffed-animals button {
+  float: right;
+}
+
+.bixinhos {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+
+}
+
+.linha {
+  width: 100%;
+  height: 70px;
+  border-bottom: 2px solid rgba(0, 0, 0, .10);
+}
+
+.bixinhos a {
+  width: 20%;
+  height: 270px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, .10);
+  text-decoration: none;
+}
+
+.bixinhos p {
+  background-color: #a5c926;
+  width: 80px;
+  padding: 5px;
+  color: white;
+  font-size: 11px;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.price p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.bixinhos h6 {
+  font-size: 16px;
+  color: black;
+
+}
+
+.bixinhos img {
+  width: 155px;
+  height: 188px;
+}
+
+.stuffed-animals button {
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, .10);
+  background: none;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 3px;
+  margin-top: 10px;
+}
+
+.stuffed-animals button:hover {
+  border-bottom: 2px solid #a5c926
+}
+
+.parallax {
+  margin-top: 30px;
+  height: 400px;
+  grid-column: 1/4;
+  background-image: url(img/rena.png);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  align-items: center;
+
+}
+
+.espaco {
+  width: 100%;
+  height: 8000px;
+}
+
+.content-parallax {
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-parallax p,
+h1 {
+  padding: 8px;
+
+}
+
+.content-parallax button {
+  margin-top: 20px;
+  padding: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #a5c926;
+  border: none;
+  cursor: pointer;
+
+}
+
+.content-parallax button i {
+  font-size: 22px;
+  margin-left: 3px;
+  margin-top: 1px;
+}
+
+.made {
+  grid-column: 2/3;
+  height: 280px;
+  align-items: center;
+}
+
+.made h1,
+h2 {
+  text-align: center;
+
+}
+
+.made h1 {
+  margin-top: 80px;
+  font-size: 12px;
+  color: #a5c926;
+}
+
+.made h2 {
+  margin-top: 10px;
+  font-size: 30px;
+
+}
+
+.available-imagem {
+  grid-column: 2/3;
+  height: 450px;
+}
+
+.available-text {
+  float: left;
+  width: 50%;
+
+}
+
+.available-text h1 {
+  text-align: left;
+  font-size: 28px;
+  padding: 0;
+
+}
+
+.available-text p {
+  font-size: 14px;
+  color: darkgray;
+  margin-top: 25px;
+}
+
+.available-imagem img {
+  width: 50%;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.available-text button {
+  border: none;
+  width: 120px;
+  height: 40px;
+  color: white;
+  font-size: 12px;
+  border-radius: 30px;
+  background-color: #a5c926;
+  margin-top: 25px;
+}
+
+.available-linha {
+  border-bottom: 2px solid #a5c926;
+  height: 20px;
+  width: 80px;
+
 }
