@@ -57,7 +57,8 @@ body {
 
 .grid-menu {
   grid-column: 2/3;
-  height: 200px;
+
+
 }
 
 .fixed {
@@ -74,41 +75,75 @@ body {
 
 .menu-principal {
   width: 100%;
-  height: 50px;
+  height: 70px;
   position: fixed;
-  top: 20px;
-}
-
-
-.lista {
-  list-style: none;
-  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 
 }
 
-.lista button {
-  width: 100%;
+
+.botao-carrinho i {
+  margin-left: 10px;
+  font-size: 18px;
+
+}
+
+.botao-carrinho .contador {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #a5c926;
+  color: white;
+}
+
+.contador {
+  margin-left: 10px;
+
+}
+
+.contador p {
+  margin-top: 3px;
+  margin-left: 1px;
+}
+
+.botao-carrinho button {
+  width: 90px;
+  display: flex;
+  background-color: #ffffff;
+  border: none;
+}
+
+
+.botao-carrinho a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-between;
   position: relative;
-  left: 12%;
-  bottom: 23px;
+  right: 120%;
+}
+
+.botao-logo a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  position: relative;
+  left: 100%;
+}
+
+.botao-logo button {
+  background: none;
+  border: none;
 }
 
 .lista li {
   display: inline;
-}
-
-.lista a {
-  position: relative;
-  top: 10px;
-  left: 17%;
-}
-
-.lista h1 {
-  margin-right: 30px;
-  display: inline;
-  position: relative;
-  top: 10px;
-  left: 16.5%;
 }
 
 .carrinho i {
@@ -116,19 +151,10 @@ body {
   margin-left: 12px;
 }
 
-.carrinho {
-  border: none;
-  background: none;
-}
-
 .lista a {
   text-decoration: none;
   color: black;
   padding: 18px;
-  position: relative;
-  top: 10px;
-  left: 17%;
-
 }
 
 .lista a:hover {
@@ -138,15 +164,14 @@ body {
 
 .imagem-fundo {
   grid-column: 1/4;
-  position: relative;
   width: 100%;
-  height: 650px;
+  height: 750px;
   top: 100px;
 }
 
 .imagem {
   width: 100%;
-  height: 650px;
+  height: 750px;
   background-image: url(img/principal.png);
   background-repeat: no-repeat;
 }
@@ -159,10 +184,8 @@ body {
   border-radius: 10px;
   background-color: white;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
+  top: 30%;
+  left: 35%;
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, .10)
 }
 
@@ -229,24 +252,10 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
   }
-
-  .animals {
-    margin-top: 40px;
-    margin-left: 15px;
-  }
-
-  .toys {
-    margin-bottom: 40px;
-    margin-right: 15px;
-  }
-
-  .animals button {
-    right: 50px;
-  }
-
-  .toys h2 {}
-
 }
+
+
+
 
 
 
@@ -350,8 +359,8 @@ h1 {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, .10);
-  text-decoration: none;
   transition: 0.5s;
+  text-decoration: none;
 }
 
 .bixinhos a:hover {
@@ -370,7 +379,7 @@ h1 {
 }
 
 .price p {
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -382,7 +391,7 @@ h1 {
 
 .bixinhos img {
   width: 155px;
-  height: 188px;
+  height: 180px;
 }
 
 .stuffed-animals button {
@@ -485,6 +494,7 @@ h2 {
 .available-imagem {
   grid-column: 2/3;
   height: 450px;
+  display: inline;
 }
 
 .available-text {
@@ -507,6 +517,7 @@ h2 {
 }
 
 .available-imagem img {
+  float: right;
   width: 50%;
   height: 350px;
   border-radius: 20px;
@@ -737,4 +748,15 @@ h2 {
 .created {
   margin-top: 10px;
   color: white;
+}
+
+.scroll {
+  opacity: 0;
+  transition: 1s;
+  transform: scale(0);
+}
+
+.scroll.ativo {
+  opacity: 1;
+  transform: scale(1);
 }
