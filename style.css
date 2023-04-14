@@ -11,6 +11,8 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1000px 1fr;
+  background-color: #a5c926;
+  height: 30px;
 }
 
 
@@ -18,20 +20,24 @@ body {
   grid-column: 2/3;
   color: white;
   height: 30px;
+  background-color: #a5c926;
+  display: flex;
+  justify-content: space-between;
 }
 
-.grid-container {
-  background-color: #a5c926;
-  height: 30px;
+.informacoes {
+  position: relative;
+  left: 16.5%;
+  top: 5px;
 }
 
 
 .informacoes p {
   font-size: 12px;
-  float: left;
   padding: 7px;
   display: inline;
 }
+
 
 .redes-sociais li {
   float: right;
@@ -39,9 +45,9 @@ body {
   list-style: none;
 }
 
-.color {
-  grid-column: 1/5;
-  background-color: greenyellow;
+.redes-sociais {
+  position: relative;
+  right: 17.5%;
 }
 
 .redes-sociais i {
@@ -51,33 +57,58 @@ body {
 
 .grid-menu {
   grid-column: 2/3;
+  height: 200px;
+}
+
+.fixed {
+  height: 100px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+
 }
 
 .menu-principal {
   width: 100%;
   height: 50px;
+  position: fixed;
+  top: 20px;
 }
 
-.logo {
-  margin-right: 45px;
-}
 
 .lista {
   list-style: none;
   margin-top: 20px;
+
+}
+
+.lista button {
+  width: 100%;
+  position: relative;
+  left: 12%;
+  bottom: 23px;
 }
 
 .lista li {
   display: inline;
 }
 
+.lista a {
+  position: relative;
+  top: 10px;
+  left: 17%;
+}
+
 .lista h1 {
   margin-right: 30px;
   display: inline;
-}
-
-.lista button {
-  float: right;
+  position: relative;
+  top: 10px;
+  left: 16.5%;
 }
 
 .carrinho i {
@@ -94,6 +125,9 @@ body {
   text-decoration: none;
   color: black;
   padding: 18px;
+  position: relative;
+  top: 10px;
+  left: 17%;
 
 }
 
@@ -102,20 +136,12 @@ body {
 
 }
 
-.botao-carrinho {
-  float: right;
-  display: flex;
-}
-
-.botao-carrinho a {
-  padding: 12px;
-}
-
 .imagem-fundo {
   grid-column: 1/4;
   position: relative;
   width: 100%;
   height: 650px;
+  top: 100px;
 }
 
 .imagem {
@@ -685,7 +711,7 @@ h2 {
   align-items: center;
   font-size: 11px;
   position: absolute;
-  bottom: -3280px;
+  bottom: -3190px;
   border-top: 1px solid white;
 
 }
