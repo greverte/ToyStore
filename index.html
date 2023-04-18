@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>ToyStore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/fdc22d07c1.js" crossorigin="anonymous"></script>
 </head>
 
@@ -42,18 +45,18 @@
         <nav class="menu-principal">
           <div class="botao-logo">
             <button type="button">
-              <a href="#">ToyStore</a>
+              <a href="./index.html">ToyStore</a>
             </button>
           </div>
           <ul class="lista">
-            <li><a href="./catalog.html">Catalog</a></li>
+            <li><a href="./html/catalog.html">Catalog</a></li>
             <li><a href="#">Delivery</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contacts</a></li>
           </ul>
           <div class="botao-carrinho">
             <button type="button">
-              <a href="#">Cart<i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+              <a data-modal="abrir" href="#">Cart<i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
                 <div class="contador">
                   <p>0</p>
                 </div>
@@ -95,7 +98,7 @@
           <div class="imagem-produto scroll">
             <img src="img/teddy.png" alt="">
           </div>
-          <h6>Teddy Bear</h6>
+          <h6>Tè ddy Bear</h6>
           <div class="price">
             <p>$ 30.00 USD</p>
           </div>
@@ -247,8 +250,8 @@
       </div>
       <div class="menusec">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Catalog</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href=".//html/catalog.html">Catalog</a></li>
           <li><a href="#">Delivery</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contacts</a></li>
@@ -289,6 +292,15 @@
       </div>
     </div>
   </div>
+
+  <section class="modal-conteiner" data-modal="container">
+    <div class=" modal">
+      <div class="yourCart">
+        <h3>Your Cart</h3>
+        <button data-modal="fechar" type="button">X</button>
+      </div>
+    </div>
+  </section>
   <script src="script.js"></script>
 </body>
 
