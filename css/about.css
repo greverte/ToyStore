@@ -1,0 +1,113 @@
+.content-about {
+  margin-top: 100px;
+  grid-column: 2/3;
+}
+
+.content-about p,
+.content-about h1,
+.content-about button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 7px;
+}
+
+.content-about p {
+  color: #a5c926;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.content-about .cinza {
+  color: gray;
+  width: 45%;
+}
+
+.content-about button {
+  margin-top: 30px;
+  border: none;
+  background: none;
+  font-size: 12px;
+  border-bottom: 2px solid rgba(0, 0, 0, .10);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.content-about button:hover {
+  border-bottom: 2px solid #a5c926;
+}
+
+.imagemPrincipal-about {
+  grid-column: 2/3;
+  margin-top: 100px;
+}
+
+.imagemPrincipal-about img {
+  width: 100%;
+  border-radius: 20px;
+  filter: brightness(90%);
+}
+
+.available-imagem2 {
+  grid-column: 2/3;
+  height: 450px;
+  display: inline;
+
+}
+
+.available-text2 {
+  float: right;
+  width: 50%;
+  margin-top: 50px;
+}
+
+.available-text2 h1 {
+  margin-left: 94px;
+  text-align: left;
+  font-size: 28px;
+  padding: 0;
+
+}
+
+.available-text2 p {
+  font-size: 14px;
+  color: darkgray;
+  margin-top: 25px;
+  float: right;
+}
+
+.available-imagem2 img {
+  float: left;
+  width: 50%;
+  height: 350px;
+  border-radius: 20px;
+  filter: brightness(90%);
+}
+
+.available-text2 button {
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, .10);
+  width: 107px;
+  height: 25px;
+  color: black;
+  font-size: 12px;
+  background: none;
+  margin-top: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-left: 96px;
+  text-align: left;
+}
+
+.available-text2 button:hover {
+  border-bottom: 2px solid #a5c926;
+}
+
+.available-linha2 {
+  border-bottom: 2px solid #a5c926;
+  height: 20px;
+  width: 80px;
+  margin-left: 96px;
+
+}

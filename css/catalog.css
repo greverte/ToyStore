@@ -67,21 +67,28 @@
 .all-toys {
   grid-column: 2/3;
   height: 1350px;
-}
-
-.primeira-linha {
-  margin-top: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
-  align-items: center;
-  border: 2 solid black;
 }
 
 .primeira-linha a {
+  display: inline-block;
   text-decoration: none;
   color: black;
+  padding: 20px 40px;
+  background-color: white;
+  margin-top: 40px;
+  margin-right: 25px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, .10);
+  transition: 0.3s;
 
+}
+
+.primeira-linha a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, .10);
 }
 
 .primeira-linha li {
@@ -122,92 +129,7 @@
 
 }
 
-.segunda-linha {
-  margin-top: 70px;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  align-items: center;
-  border: 2 solid black;
-}
 
-.segunda-linha a {
-  text-decoration: none;
-  color: black;
-
-}
-
-.segunda-linha li {
-  border: 1px solid rgba(0, 0, 0, .10);
-  background-color: white;
-  width: 20%;
-  height: 240px;
-  border-radius: 10px;
-  display: inline;
-}
-
-.segunda-linha img {
-  width: 130px;
-  height: 150px;
-}
-
-.terceira-linha {
-  margin-top: 70px;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  align-items: center;
-  border: 2 solid black;
-}
-
-.terceira-linha a {
-  text-decoration: none;
-  color: black;
-
-}
-
-.terceira-linha li {
-  border: 1px solid rgba(0, 0, 0, .10);
-  background-color: white;
-  width: 20%;
-  height: 240px;
-  border-radius: 10px;
-  display: inline;
-}
-
-.terceira-linha img {
-  width: 130px;
-  height: 150px;
-}
-
-.quarta-linha {
-  margin-top: 70px;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  align-items: center;
-  border: 2 solid black;
-}
-
-.quarta-linha a {
-  text-decoration: none;
-  color: black;
-
-}
-
-.quarta-linha li {
-  border: 1px solid rgba(0, 0, 0, .10);
-  background-color: white;
-  width: 20%;
-  height: 240px;
-  border-radius: 10px;
-  display: inline;
-}
-
-.quarta-linha img {
-  width: 130px;
-  height: 150px;
-}
 
 .all-toys li {
   transition: 0.5s;
@@ -218,6 +140,6 @@
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, .10);
 }
 
-.some {
+.all-toys .some {
   display: none;
 }

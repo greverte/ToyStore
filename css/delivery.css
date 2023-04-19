@@ -1,0 +1,65 @@
+.busca-delivery {
+  grid-column: 2/3;
+}
+
+.content-delivery {
+  grid-column: 2/3;
+  height: 700px;
+  margin-top: 40px;
+  display: flex;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, .10);
+  border-radius: 15px;
+}
+
+.info-delivery {
+  width: 55%;
+  margin-top: 60px;
+  margin-left: 60px;
+  text-align: left;
+}
+
+.info-delivery p {
+  font-size: 12px;
+  font-family: Arial;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.question-delivery {
+  width: 250px;
+  height: 170px;
+  border: 2px solid rgba(0, 0, 0, .10);
+  border-radius: 20px;
+  margin-top: 70px;
+  margin-left: 80px;
+}
+
+.question-delivery h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+
+}
+
+.question-delivery button {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  margin-top: 25px;
+  margin-left: 74px;
+  color: white;
+  background-color: #a5c926;
+  border: none;
+  font-size: 10px;
+}
+
+.gambiarra {
+  grid-column: 2/3;
+  height: 100px;
+
+}
