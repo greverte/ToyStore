@@ -39,69 +39,69 @@ const alltoys = document.querySelector('.allToysLink');
 const primeiraLinha = document.querySelectorAll('.primeira-linha a');
 const telaToys = document.querySelector('.all-toys');
 
-if (window.location.href === 'http://127.0.0.1:5500/html/catalog.html') {
-  function add1(event) {
-    event.preventDefault();
-    links.forEach((link) => {
-      link.classList.remove('ativo')
-    });
-    primeiraLinha.forEach((x) => {
-      if (x.classList.value === "wooden some") {
-        x.classList.remove("some");
-      }
-      if (x.classList.value === 'stuffed') {
-        x.classList.add("some")
-      }
-    });
-    wooden.classList.add('ativo');
-    newh5.innerText = 'Wooden Toys';
-    caminho.appendChild(newh5);
-    titulo.style.width = '200px';
-    titulo.innerHTML = 'Wooden Toys';
-    telaToys.style.height = '720px'
 
-  }
-  function add2(event) {
-    event.preventDefault();
-    links.forEach((link) => {
-      link.classList.remove('ativo')
-    });
-    primeiraLinha.forEach((x) => {
-      if (x.classList.value === "stuffed some") {
-        x.classList.remove("some");
-      }
-      if (x.classList.value === 'wooden') {
-        x.classList.add("some");
-      }
-    });
-    stuffed.classList.add('ativo');
-    newh5.innerText = 'Stuffed Animals';
-    caminho.appendChild(newh5);
-    titulo.innerHTML = 'Stuffed Animals';
-    titulo.style.width = '200px'
-    telaToys.style.height = '720px'
-  }
-
-  function add3(event) {
-    event.preventDefault();
-    primeiraLinha.forEach((x) => {
+function add1(event) {
+  event.preventDefault();
+  links.forEach((link) => {
+    link.classList.remove('ativo')
+  });
+  primeiraLinha.forEach((x) => {
+    if (x.classList.value === "wooden some") {
       x.classList.remove("some");
-    });
-    links.forEach((link) => {
-      link.classList.remove('ativo')
-    });
-    alltoys.classList.add('ativo');
-    newh5.innerText = '';
-    caminho.appendChild(newh5);
-    titulo.innerHTML = 'All Toys'
-    titulo.style.width = '100px'
-    telaToys.style.height = '1350px'
-  }
+    }
+    if (x.classList.value === 'stuffed') {
+      x.classList.add("some")
+    }
+  });
+  wooden.classList.add('ativo');
+  newh5.innerText = 'Wooden Toys';
+  caminho.appendChild(newh5);
+  titulo.style.width = '200px';
+  titulo.innerHTML = 'Wooden Toys';
+  telaToys.style.height = '720px'
 
-  wooden.addEventListener('click', add1);
-  stuffed.addEventListener('click', add2);
-  alltoys.addEventListener('click', add3)
 }
+function add2(event) {
+  event.preventDefault();
+  links.forEach((link) => {
+    link.classList.remove('ativo')
+  });
+  primeiraLinha.forEach((x) => {
+    if (x.classList.value === "stuffed some") {
+      x.classList.remove("some");
+    }
+    if (x.classList.value === 'wooden') {
+      x.classList.add("some");
+    }
+  });
+  stuffed.classList.add('ativo');
+  newh5.innerText = 'Stuffed Animals';
+  caminho.appendChild(newh5);
+  titulo.innerHTML = 'Stuffed Animals';
+  titulo.style.width = '200px'
+  telaToys.style.height = '720px'
+}
+
+function add3(event) {
+  event.preventDefault();
+  primeiraLinha.forEach((x) => {
+    x.classList.remove("some");
+  });
+  links.forEach((link) => {
+    link.classList.remove('ativo')
+  });
+  alltoys.classList.add('ativo');
+  newh5.innerText = '';
+  caminho.appendChild(newh5);
+  titulo.innerHTML = 'All Toys'
+  titulo.style.width = '100px'
+  telaToys.style.height = '1350px'
+}
+
+wooden.addEventListener('click', add1);
+stuffed.addEventListener('click', add2);
+alltoys.addEventListener('click', add3)
+
 const products = document.querySelectorAll('.all-toys a')
 const tamanhoAllToys = document.querySelector('.all-toys')
 
@@ -126,12 +126,11 @@ window.addEventListener('load', relatedProducts)
 
 const moreAbout = document.querySelector('a[href="#more-about"]');
 
-if (window.location.href === 'http://127.0.0.1:5500/html/about.html') {
-  function scrollSlow(event) {
-    event.preventDefault();
 
-    let target = document.querySelector(this.hash); // pegando a div linkada
-    target.scrollIntoView({ behavior: 'smooth' }); //aplicando o slowScroll
-  }
-  moreAbout.addEventListener('click', scrollSlow);
+function scrollSlow(event) {
+  event.preventDefault();
+
+  let target = document.querySelector(this.hash); // pegando a div linkada
+  target.scrollIntoView({ behavior: 'smooth' }); //aplicando o slowScroll
 }
+moreAbout.addEventListener('click', scrollSlow);
