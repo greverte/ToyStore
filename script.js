@@ -39,66 +39,98 @@ const alltoys = document.querySelector('.allToysLink');
 const primeiraLinha = document.querySelectorAll('.primeira-linha a');
 const telaToys = document.querySelector('.all-toys');
 
-function add1(event) {
-  event.preventDefault();
-  links.forEach((link) => {
-    link.classList.remove('ativo')
-  });
-  primeiraLinha.forEach((x) => {
-    if (x.classList.value === "wooden some") {
+if (window.location.href === 'http://127.0.0.1:5500/html/catalog.html') {
+  function add1(event) {
+    event.preventDefault();
+    links.forEach((link) => {
+      link.classList.remove('ativo')
+    });
+    primeiraLinha.forEach((x) => {
+      if (x.classList.value === "wooden some") {
+        x.classList.remove("some");
+      }
+      if (x.classList.value === 'stuffed') {
+        x.classList.add("some")
+      }
+    });
+    wooden.classList.add('ativo');
+    newh5.innerText = 'Wooden Toys';
+    caminho.appendChild(newh5);
+    titulo.style.width = '200px';
+    titulo.innerHTML = 'Wooden Toys';
+    telaToys.style.height = '720px'
+
+  }
+  function add2(event) {
+    event.preventDefault();
+    links.forEach((link) => {
+      link.classList.remove('ativo')
+    });
+    primeiraLinha.forEach((x) => {
+      if (x.classList.value === "stuffed some") {
+        x.classList.remove("some");
+      }
+      if (x.classList.value === 'wooden') {
+        x.classList.add("some");
+      }
+    });
+    stuffed.classList.add('ativo');
+    newh5.innerText = 'Stuffed Animals';
+    caminho.appendChild(newh5);
+    titulo.innerHTML = 'Stuffed Animals';
+    titulo.style.width = '200px'
+    telaToys.style.height = '720px'
+  }
+
+  function add3(event) {
+    event.preventDefault();
+    primeiraLinha.forEach((x) => {
       x.classList.remove("some");
-    }
-    if (x.classList.value === 'stuffed') {
-      x.classList.add("some")
-    }
-  });
-  wooden.classList.add('ativo');
-  newh5.innerText = 'Wooden Toys';
-  caminho.appendChild(newh5);
-  titulo.style.width = '200px';
-  titulo.innerHTML = 'Wooden Toys';
-  telaToys.style.height = '720px'
+    });
+    links.forEach((link) => {
+      link.classList.remove('ativo')
+    });
+    alltoys.classList.add('ativo');
+    newh5.innerText = '';
+    caminho.appendChild(newh5);
+    titulo.innerHTML = 'All Toys'
+    titulo.style.width = '100px'
+    telaToys.style.height = '1350px'
+  }
 
+  wooden.addEventListener('click', add1);
+  stuffed.addEventListener('click', add2);
+  alltoys.addEventListener('click', add3)
 }
-function add2(event) {
+const products = document.querySelectorAll('.all-toys a')
+const tamanhoAllToys = document.querySelector('.all-toys')
+
+const arrayRandom = [];
+var y = ''
+function relatedProducts(event) {
   event.preventDefault();
-  links.forEach((link) => {
-    link.classList.remove('ativo')
-  });
-  primeiraLinha.forEach((x) => {
-    if (x.classList.value === "stuffed some") {
-      x.classList.remove("some");
+  if (window.location.href.includes('product') === true) {
+    while (arrayRandom.length < 4) {
+      const random = Math.floor(Math.random() * products.length);
+      if (!arrayRandom.includes(random)) {
+        arrayRandom.push(random)
+      }
     }
-    if (x.classList.value === 'wooden') {
-      x.classList.add("some");
-    }
-  });
-  stuffed.classList.add('ativo');
-  newh5.innerText = 'Stuffed Animals';
-  caminho.appendChild(newh5);
-  titulo.innerHTML = 'Stuffed Animals';
-  titulo.style.width = '200px'
-  telaToys.style.height = '720px'
+    tamanhoAllToys.style.height = '400px';
+  }
+  arrayRandom.forEach((random) => {
+    products[random].removeAttribute("id");
+  })
 }
+window.addEventListener('load', relatedProducts)
 
-function add3(event) {
-  event.preventDefault();
-  primeiraLinha.forEach((x) => {
-    x.classList.remove("some");
-  });
-  links.forEach((link) => {
-    link.classList.remove('ativo')
-  });
-  alltoys.classList.add('ativo');
-  newh5.innerText = '';
-  caminho.appendChild(newh5);
-  titulo.innerHTML = 'All Toys'
-  titulo.style.width = '100px'
-  telaToys.style.height = '1350px'
+const moreAbout = document.querySelector('a[href="#more-about"]');
+
+if (window.location.href === 'http://127.0.0.1:5500/html/about.html') {
+  function scrollSlow(event) {
+    event.preventDefault();
+    let target = document.querySelector(this.hash); // pegando a div linkada
+    target.scrollIntoView({ behavior: 'smooth' }); //aplicando o slowScroll
+  }
 }
-
-wooden.addEventListener('click', add1);
-stuffed.addEventListener('click', add2);
-alltoys.addEventListener('click', add3)
-
-
+moreAbout.addEventListener('click', scrollSlow);

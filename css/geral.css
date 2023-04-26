@@ -204,8 +204,13 @@ button {
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, .10)
 }
 
+.centro a {
+  text-decoration: none;
+  color: white;
+}
+
 .centro p,
-h1 {
+.centro h1 {
   text-align: center;
   align-items: center;
   padding: 5px;
@@ -345,6 +350,24 @@ h1 {
   height: 470px;
 }
 
+.morephoto a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+.animals a,
+.toys a {
+  text-decoration: none;
+  color: black;
+  font-size: 11px;
+}
+
+.stuffed-animals a {
+  text-decoration: none;
+  color: black;
+}
+
 .stuffed-animals h1 {
   float: left;
   font-size: 22px;
@@ -458,7 +481,7 @@ h1 {
 }
 
 .content-parallax p,
-h1 {
+.content-parallax h1 {
   padding: 8px;
 
 }
@@ -758,6 +781,7 @@ h1 {
   justify-content: space-between;
   background-color: #a5c926;
   color: white;
+
 }
 
 .footer2 a,

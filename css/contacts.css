@@ -4,4 +4,142 @@
 
 .content-contacts {
   grid-column: 2/3;
+  background-color: white;
+  height: 1000px;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+
+.mapa-google {
+  border-radius: 15px;
+}
+
+.mapa-contacts {
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+}
+
+.mapa-contacts img {
+  width: 850px;
+  border-radius: 15px;
+  height: 350px;
+}
+
+.message-contacts {
+  width: 40%;
+  float: left;
+  display: grid;
+  margin-left: 75px;
+  margin-top: 40px;
+}
+
+.message-contacts label {
+  font-size: 10px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.message-contacts input {
+  width: 400px;
+  height: 40px;
+  border-radius: 30px;
+  border: 2px solid #e5e5e5;
+  background-color: #f8f8f8;
+  color: #333333;
+  padding-left: 20px;
+  transition: 0.5s;
+}
+
+.message-contacts input:hover {
+  background-color: white;
+
+}
+
+.message-contacts #msg {
+  height: 150px;
+  border-radius: 20px;
+  padding-bottom: 100px;
+
+}
+
+.message-contacts button {
+  width: 110px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: #a5c926;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.message-contacts button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, .10);
+}
+
+.message-contacts h1 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-contacts p {
+  font-size: 11px;
+  padding-bottom: 5px;
+}
+
+.contact-contacts .email-bord {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  width: 30%;
+  padding-bottom: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, .10);
+  cursor: pointer;
+}
+
+.contact-contacts .email-bord:hover {
+  border-bottom: 2px solid #a5c926;
+}
+
+.contact-contacts {
+  width: 40%;
+  float: right;
+  margin-top: 40px;
+}
+
+.contact-contacts h1 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-contacts h5 {
+  margin-top: 40px;
+}
+
+.redes-sociais-contacts {
+  margin-top: 15px;
+
+}
+
+.redes-sociais-contacts a {
+  margin-right: 3px;
+
+}
+
+.redes-sociais-contacts li {
+  display: inline;
+
+}
+
+.redes-sociais-contacts i {
+  font-size: 13px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 9.5px;
 }

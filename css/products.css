@@ -1,0 +1,241 @@
+.teddy-content {
+  grid-column: 2/3;
+  height: 1350px;
+  background-color: white;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, .10);
+}
+
+.teddy-text {
+  width: 35%;
+  margin-top: 120px;
+  margin-left: 70px;
+  display: inline-block
+}
+
+.teddy-text h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.teddy-text p {
+  font-size: 11px;
+  color: #999999;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.teddy-text h2 {
+  color: #a5c926;
+  margin-top: 20px;
+}
+
+.teddy-qnt {
+  margin-top: 25px;
+}
+
+.teddy-qnt #numeric {
+  width: 70px;
+  height: 35px;
+  border-radius: 40px;
+  border: 2px solid #e5e5e5;
+  background-color: #f8f8f8;
+  padding-left: 25px;
+  padding-right: 18px;
+
+}
+
+.teddy-qnt #numeric:hover {
+  background-color: white;
+}
+
+.teddy-qnt button {
+  width: 110px;
+  height: 38px;
+  border-radius: 20px;
+  border: none;
+  background-color: #a5c926;
+  color: white;
+  font-size: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.teddy-qnt button:hover {
+  transform: scale(1.1);
+}
+
+.teddy-image {
+  width: 50%;
+  display: flex;
+  display: inline-block;
+  height: 400px;
+  position: absolute;
+}
+
+.teddy-image img {
+  margin-left: 80px;
+  position: relative;
+  top: 100px;
+}
+
+.teddy-details {
+  grid-column: 2/3;
+  height: 80px;
+  margin-top: 200px;
+  border-bottom: 2px solid rgba(0, 0, 0, .10);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.teddy-details p {
+  color: gray;
+  font-size: 9px;
+}
+
+.teddy-details h5 {
+  height: 46px;
+  margin-top: 35px;
+  border-bottom: 2px solid #a5c926;
+}
+
+.teddy-description {
+  grid-column: 2/3;
+  width: 60%;
+  margin-left: 70px;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.teddy-description h1 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.teddy-description h5 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.teddy-description p {
+  font-size: 12px;
+  color: #3D3D3D;
+  font-weight: bold;
+}
+
+.teddy-info {
+  grid-column: 2/3;
+  display: inline-block;
+  float: right;
+  margin-top: 70px;
+  margin-right: 70px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(0, 0, 0, .10);
+  border-radius: 15px;
+
+}
+
+
+
+.info-first h5,
+.info-first p {
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 1px;
+}
+
+.teddy-width,
+.teddy-height,
+.teddy-lenght,
+.teddy-weight {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, .10);
+  height: 30px;
+  width: 80%;
+  margin: 14px auto;
+  text-align: center;
+}
+
+.teddy-related {
+  grid-column: 2/3;
+  margin-top: 50px;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, .10);
+}
+
+.teddy-related h1 {
+  font-size: 20px;
+}
+
+.teddy-related p {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.relate-products {
+  height: 70px;
+  margin-top: 61px;
+  border-bottom: 2px solid #a5c926;
+}
+
+.teste {
+  height: 2000px;
+}
+
+.teddy-related button {
+  margin-top: 16px;
+  border: none;
+  background: none;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 2px;
+  border-bottom: 2px solid rgba(0, 0, 0, .10);
+}
+
+.see-all {
+  margin-top: 26px;
+}
+
+.see-all a:hover {
+  border-color: #a5c926;
+}
+
+.see-all i {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.see-all a {
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid rgba(0, 0, 0, .10);
+}
+
+.related-img {
+  grid-column: 2/3;
+}
+
+.related-img li {
+  display: inline;
+}
+
+#some-all-toys {
+  display: none;
+}

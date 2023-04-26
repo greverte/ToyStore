@@ -78,12 +78,12 @@
       <h1>Introducing ToyStore</h1>
       <p class="cinza">A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing
         result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.</p>
-      <button type="button">More About Us</button>
+      <button type="button"><a href="#more-about">More About Us</a></button>
     </div>
     <div class="imagemPrincipal-about">
       <img src="../img/herois.png" alt="">
     </div>
-    <div class="made">
+    <div class="made" id="more-about">
       <div class="title">
         <h1>Made for Webflow</h1>
       </div>
@@ -170,10 +170,10 @@
       <div class="menusec">
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="./catalog.html">Catalog</a></li>
-          <li><a href="./delivery.html">Delivery</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="/html/catalog.html">Catalog</a></li>
+          <li><a href="/html/delivery.html">Delivery</a></li>
+          <li><a href="/html/about.html">About</a></li>
+          <li><a href="/html/contacts.html">Contacts</a></li>
         </ul>
       </div>
       <div class="footer-social">
@@ -215,6 +215,14 @@
 
 
   </div>
+  <section class="modal-conteiner" data-modal="container">
+    <div class=" modal">
+      <div class="yourCart">
+        <h3>Your Cart</h3>
+        <button data-modal="fechar" type="button">X</button>
+      </div>
+    </div>
+  </section>
   <script src="../script.js"></script>
 </body>
 

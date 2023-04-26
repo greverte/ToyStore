@@ -14,11 +14,12 @@
 
 .caminho h5 {
   color: #6f6d6d;
-  margin-left: 10px;
+  padding-left: 20px;
+  font-size: 10px;
 }
 
 .caminho i {
-  margin-left: 10px;
+  margin-left: 20px;
   font-size: 10px;
 }
 
