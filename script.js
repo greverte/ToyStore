@@ -129,8 +129,9 @@ const moreAbout = document.querySelector('a[href="#more-about"]');
 if (window.location.href === 'http://127.0.0.1:5500/html/about.html') {
   function scrollSlow(event) {
     event.preventDefault();
+
     let target = document.querySelector(this.hash); // pegando a div linkada
     target.scrollIntoView({ behavior: 'smooth' }); //aplicando o slowScroll
   }
+  moreAbout.addEventListener('click', scrollSlow);
 }
-moreAbout.addEventListener('click', scrollSlow);
