@@ -19,6 +19,7 @@ const containerModal = document.querySelector('[data-modal="container"]'); //div
 function togglemodal(event) {
   event.preventDefault();
   containerModal.classList.toggle('ativo')
+
 }
 function cliqueForaModal(event) {
   if (event.target === this) { // se eu clicar no modal (parte escura), ele fecha.
@@ -53,3 +54,54 @@ function relatedProducts(event) {
 }
 window.addEventListener('load', relatedProducts)
 
+const botao = document.querySelector('.buttonCarrinho');
+
+
+function adicionarCarrinho() {
+  togglemodal(event);
+  const caixaModal = document.querySelector('.modal');
+  const nomeProduto = document.querySelector('.teddy-text h1').textContent;
+  const imgProduto = document.querySelector('.teddy-image img').currentSrc;
+  const precoProduto = document.querySelector('.teddy-text h2').textContent;
+  const qntProduto = document.querySelector('.teddy-qnt #numeric');
+
+  const divCarrinho = document.createElement("div");
+  divCarrinho.className = 'produtoCarrinho';
+  const imgCarrinho = document.createElement("img");
+  const tituloCarrinho = document.createElement("h1");
+  const precoCarrinho = document.createElement("p");
+  const removeCarrinho = document.createElement("button");
+  const continueCheck = document.createElement("button");
+  const qntCarrinho = document.createElement("input");
+  caixaModal.appendChild(divCarrinho);
+  divCarrinho.appendChild(continueCheck);
+  divCarrinho.appendChild(imgCarrinho);
+  divCarrinho.appendChild(tituloCarrinho);
+  divCarrinho.appendChild(precoCarrinho);
+  divCarrinho.appendChild(removeCarrinho);
+  divCarrinho.appendChild(qntCarrinho);
+  continueCheck.setAttribute("class", 'continueCheck')
+  continueCheck.innerHTML = 'Continue to Checkout';
+  removeCarrinho.setAttribute("class", 'removeCarrinhoBottaox')
+  imgCarrinho.setAttribute("src", imgProduto);
+  tituloCarrinho.innerHTML = nomeProduto;
+  precoCarrinho.innerHTML = precoProduto;
+  removeCarrinho.innerHTML = 'Remover';
+  qntCarrinho.setAttribute("type", "number");
+  qntCarrinho.setAttribute("min", 1);
+  qntCarrinho.setAttribute("value", 1);
+  const removerProduto = document.querySelector('.removeCarrinhoBottaox');
+  removerProduto.addEventListener('click', removeProdutoCarrinho);
+  function removeProdutoCarrinho(event) {
+    const removeProdutoCarrinhoFilho = this.parentNode;
+    caixaModal.removeChild(removeProdutoCarrinhoFilho);
+    location.reload();
+  }
+  botao.removeEventListener('click', adicionarCarrinho);
+  botao.addEventListener('click', togglemodal);
+}
+
+
+
+
+botao.addEventListener('click', adicionarCarrinho)
